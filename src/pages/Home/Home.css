@@ -1,0 +1,25 @@
+.homeDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(217, 145, 142);
+    font-size: large;
+    font-weight: bolder;
+    color:rgb(233, 32, 14);
+}
+
+.rosterDesign {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    width: 100vw;
+}
+
+.loadingGif {
+    height: 10em;
+}

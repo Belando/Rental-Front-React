@@ -1,0 +1,11 @@
+.adminDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 88vh;
+    width: 100vw;
+
+    background-color:  rgb(217, 145, 142);
+}

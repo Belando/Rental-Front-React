@@ -1,0 +1,67 @@
+.profileDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    width: 100vw;
+    font-size: 20px;
+    background-color: rgb(217, 145, 142);
+    color: rgb(141, 12, 12)
+}
+
+.modifyButtonDesign {
+    height: 2em;
+    width: 10em;
+    background-color: rgb(141, 12, 12);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 2em;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.modifyButtonDesign:hover {
+    transition: 0.3s;
+    background-color: rgb(141, 12, 12);
+}
+
+.deleteButtonDesign {
+    height: 2em;
+    width: 10em;
+    background-color: rgb(141, 12, 12);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 2em;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.deleteButtonDesign:hover {
+    transition: 0.3s;
+    background-color: rgb(141, 12, 12);
+}
+
+.welcomeDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    width: 100vw;
+    height: 10vh;
+    font-size: 22px;
+    background-color: rgb(217, 145, 142);
+    color: rgb(141, 12, 12);
+    margin-bottom: 2px;
+}

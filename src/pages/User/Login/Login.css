@@ -1,0 +1,35 @@
+.loginDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 88vh;
+    width: 100vw;
+    background-color: rgb(217, 145, 142);
+    color: rgb(141, 12, 12)
+}
+
+.loginButtonDesign {
+    height: 2em;
+    width: 10em;
+    background-color: rgb(141, 12, 12);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 2em;
+    transition: 0.3s;
+}
+
+.loginButtonDesign:hover {
+    transition: 0.3s;
+    background-color: rgb(141, 12, 12);
+}
+
+.errorText {
+    color: red;
+}

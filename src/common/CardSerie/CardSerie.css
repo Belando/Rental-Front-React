@@ -1,0 +1,22 @@
+.cardSerieDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 12em;
+    width: 7em;
+
+    background-color: rgb(141, 12, 12);
+    color: white;
+    border-radius: 1em;
+    border-color: black;
+    border-width: 2px;
+
+    margin: 0.5em;
+}
+
+.posterDesign {
+    height: 8em;
+    width: 6em;
+}

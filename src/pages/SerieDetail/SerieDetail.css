@@ -1,0 +1,46 @@
+.serieDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    width: 100vw;
+    background-color: rgb(217, 145, 142);
+    font-weight: bolder;
+}
+
+.serieDetailCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 12vw;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.detailPoster {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.rentDesign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 8em;
+    border-radius: 1em;
+    background-color: rgb(141, 12, 12)  ;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+}
+
+.rentDesign:hover {
+    transition: 0.2s;
+    background-color: rgb(255, 15, 15);
+}

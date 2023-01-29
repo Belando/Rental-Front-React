@@ -1,0 +1,65 @@
+.headerDesign {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgb(141, 12, 12);
+}
+
+.logoDesignHeader {
+    height: 11vh;
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: rgb(141, 12, 12);
+}
+
+.cameraAvatar {
+    height: 12vh;
+}
+
+.headerLinksDesign {
+    height: 12vh;
+    width: 45%;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    align-items: center;
+    background-color: rgb(141, 12, 12);
+}
+
+.linkDesign {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    margin-right: 3em;
+}
+
+.searchDesign {
+    height: 12vh;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(141, 12, 12);
+}
+
+.inputDesign {
+    height: 2em;
+    width: 10em;
+    background-color: rgb(141, 12, 12);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+    border-radius: 2em;
+    transition: 0.3s;
+}
