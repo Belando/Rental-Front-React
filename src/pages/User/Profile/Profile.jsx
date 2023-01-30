@@ -106,11 +106,12 @@ export const Profile = () => {
             <InputText type={'number'} name={'phone'} placeholder={'Teléfono'} functionHandler={modifyInputHandler} />
             <InputText type={'text'} name={'country'} placeholder={'País'} functionHandler={modifyInputHandler} />
             <InputText type={'email'} name={'email'} placeholder={'Email'} functionHandler={modifyInputHandler} />
-            <InputText type={'text'} name={'dni'} placeholder={'DNI'} functionHandler={modifyInputHandler} />
+            
             <div className='modifyButtonDesign' onClick={() => Modificame()}>Modificar</div>
             <div className='deleteButtonDesign' onClick={() => Eliminame()}>Eliminar</div>
-            <div><br></br></div>
-            <div className='rosterDesign'>
+
+        
+            <div className='okDesign'>
                 <h3>Series alquiladas por el usuario</h3>
                 <table>
                     <th>Serie</th>

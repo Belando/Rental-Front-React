@@ -29,7 +29,7 @@ export const Admin = () => {
 
     return (
         <div className='adminDesign'>
-            <h3>Administración de todos los alquileres</h3>
+            <h2>Administración de todos los alquileres</h2>
             <table>
                 <th>Usuario</th>
                 <th>Inicio Alquiler</th>

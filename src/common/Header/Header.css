@@ -26,9 +26,9 @@
     width: 45%;
     font-size: 22px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: flex-end;
     
-    align-items: center;
+    align-items: flex-end;
     background-color: rgb(141, 12, 12);
 }
 

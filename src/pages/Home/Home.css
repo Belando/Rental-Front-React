@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 108vh;
     width: 100vw;
     background-color: rgb(217, 145, 142);
     font-size: large;
@@ -14,11 +14,12 @@
 .rosterDesign {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 98vh;
-    width: 100vw;
-    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+    width: 90vw;
+    flex-direction: row-reverse;
+    align-content: flex-start
 }
 
 .loadingGif {
