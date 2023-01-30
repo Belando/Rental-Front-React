@@ -34,14 +34,14 @@ export const Profile = () => {
     })
 
     useEffect(() => {
-        if (userRDX.userPass.token === '') {
+        if (userRDX.userPass.token.data.token === '') {
             navigate("/");
         }
     }, [])
 
     useEffect(() => {
         if (allRentals.length === 0) {
-            allRentalsUser(userRDX.userPass.token, userRDX.userPass._id)
+            allRentalsUser(userRDX.userPass.token.data.token, userRDX.userPass.user._id)
                 .then(resultado => {
                     setAllRentals(resultado.data)
                 }).catch(error => console.log(error))
@@ -60,10 +60,10 @@ export const Profile = () => {
             .then(
                 resultado => {
                     console.log(resultado)
-                    let decodificado = Decoder(resultado.data.token);
+                    let decodificado = Decoder(resultado.data);
                     let userPass = {
                         token: resultado,
-                        user: decodificado.usuario[0]
+                        user: decodificado.usuario
                     }
                     dispatch(modify({ userPass: userPass }));
                     setTimeout(() => {
@@ -106,25 +106,25 @@ export const Profile = () => {
             <div className='modifyButtonDesign' onClick={() => Modificame()}>Modificar</div>
             <div className='deleteButtonDesign' onClick={() => Eliminame()}>Eliminar</div>
 
-        
-            <div className='okDesign'>
-                <h3 className='titulo'>Series alquiladas por el usuario</h3>
+            <h3 className='titulo'>Series alquiladas por el usuario</h3>
+            <div className='Table'>
+                
                 <table>
                     <th>Serie</th>
                     <th>Inicio Alquiler</th>
                     <th>Fin Alquiler </th>
                     <th>Precio </th>
-                </table>
+                    </table>
                 {allRentals.length > 0 && allRentals.map(
                     rental => {
                         return (
                             <div key={rental._id}>
                                 <table>
-                                    <td>{rental.nameserie}</td>
-                                    <td>{rental.rentalDate}</td>
-                                    <td>{rental.returnDate}</td>
-                                    <td>{rental.price}</td>
-                                </table>
+                                    <th>{rental.nameSerie}</th>
+                                    <th>{rental.rentalDate}</th>
+                                    <th>{rental.returnDate}</th>
+                                    <th>{rental.price}</th>
+                                    </table>
                             </div>
                         )
                     })}

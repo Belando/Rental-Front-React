@@ -19,7 +19,7 @@ export const Admin = () => {
 
     useEffect(() => {
         if (allRentals.length === 0) {
-            allUsersAdmin(userRDX.userPass.token)
+            allUsersAdmin(userRDX.userPass.token.data.token)
                 .then(resultado => {
                     setAllRentals(resultado.data);
                 })
@@ -30,19 +30,20 @@ export const Admin = () => {
     return (
         <div className='adminDesign'>
             <h2 className='titulo'>Administración de todos los alquileres</h2>
-            <table>
+            <div className='Table'><table>
                 <th>Usuario</th>
                 <th>Inicio Alquiler</th>
                 <th>Fin Alquiler </th>
                 <th>Precio </th>
                 <th>Serie</th>
-            </table>
+            </table></div>
+            
             {allRentals.length > 0 && allRentals.map(
                 rental => {
                     return (
-                        <div key={rental._id}>
+                        <div className='Table' key={rental._id}>
                             <table>
-                                <td>{rental.idUser.email}</td>
+                                <td>{rental.nameUser}</td>
                                 <td>{rental.rentalDate}</td>
                                 <td>{rental.returnDate}</td>
                                 <td>{rental.price}</td>

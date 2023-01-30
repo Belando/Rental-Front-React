@@ -83,3 +83,14 @@
     border-radius: 2%;
     width: 25vw;
 }
+
+.Table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    background-color: rgb(180, 72, 162);
+}
+

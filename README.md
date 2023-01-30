@@ -67,11 +67,11 @@ El administrador hará uso del middleware isAdmin para gestionar los alquileres.
 
 ## ERRORES conocidos y mejoras futuras:
 
--   Fallos en los alquileres de todos los usuarios y de admin: 
-    505 internal server error
+-   Solucionado: 
+Fallos en los alquileres de todos los usuarios y de admin
 
--   Problema con el middleware isAdmin:
-    No reconoce req.user y no puede sustraer información
+-   Solucionado:
+Problema con el middleware isAdmin
 
 -   Necesario diseño responsive:
     Aún no se ha implementado diseño responsive
