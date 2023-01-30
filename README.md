@@ -8,70 +8,70 @@ El administrador hará uso del middleware isAdmin para gestionar los alquileres.
 
 El HEADER está compuesto de:
 
-•	Un logo que redirecciona a la página principal en todo momento.
+-	Un logo que redirecciona a la página principal en todo momento.
 
-•	Una barra de búsqueda para realizar endpoints por género, título o año.
+-	Una barra de búsqueda para realizar endpoints por género, título o año.
 
-•	Login donde se realiza el endpoint de acceso con usuario, guardando los datos del mismo en Redux para su utilización en otras vistas.
+-	Login donde se realiza el endpoint de acceso con usuario, guardando los datos del mismo en Redux para su utilización en otras vistas.
 
-•	Register, donde se podrá realizar el endpoint de registro de usuario con todos los campos necesarios.
+-	Register, donde se podrá realizar el endpoint de registro de usuario con todos los campos necesarios.
 
-•	Perfil, donde el usuario podrá realizar el endpoint de modificar sus datos, borrar su cuenta y administrar sus alquileres.
+-	Perfil, donde el usuario podrá realizar el endpoint de modificar sus datos, borrar su cuenta y administrar sus alquileres.
 
-•	Admin, vista donde los usuarios que accedan con un middleware isAdmin podrán gestionar los alquileres de todos los usuarios, así como las series.
+-	Admin, vista donde los usuarios que accedan con un middleware isAdmin podrán gestionar los alquileres de todos los usuarios, así como las series.
 
 
 El BODY está compuesto de:
 
-•	Home: donde cada vez que accedamos se mostrará todo el catálogo de nuestra API de series, donde se podrá acceder a ellas para ver más información y alquilarlas
+-	Home: donde cada vez que accedamos se mostrará todo el catálogo de nuestra API de series, donde se podrá acceder a ellas para ver más información y alquilarlas
 
-•	Detail: una vez pinchamos en las series tenemos la opción de rental para poder suscribirnos a esa serie.
+-	Detail: una vez pinchamos en las series tenemos la opción de rental para poder suscribirnos a esa serie.
 
 
 Las peticiones a la API para los alquileres son (/rentals):
 
-•	Alquileres de todos los usuarios: 
+-	Alquileres de todos los usuarios: 
     router.get("/admin", auth, RentalsController.AllUsersAdmin);
 
-•	Nuevo alquiler:
+-	Nuevo alquiler:
     router.post("/newrental", auth, RentalsController.newRental);
 
-•   Alquiler de un usuario:
+-   Alquiler de un usuario:
     router.get("/user", auth, RentalsController.allRentalsUser)
 
 
 Las peticiones a la API para los usuarios son (/users):
 
-•   Logear un usuario: 
+-   Logear un usuario: 
     router.post("/login", UsersController.loginUser)
 
-•   Registrar un usuario: 
+-   Registrar un usuario: 
     router.post("/register",UsersController.newUser)
 
-•   Modificar un usuario: 
+-   Modificar un usuario: 
     router.put("/profile/modify", auth, UsersController.updateUser)
 
-•   Borrar un usuario: 
+-   Borrar un usuario: 
     router.delete("/profile/delete", auth, UsersController.deleteUser)
 
 
 Las peticiones a la API para las series son (/series):
 
-•   Todas las series disponibles en HOME: 
+-   Todas las series disponibles en HOME: 
     router.get("/", SeriesController.getAllSeries)
 
-•   Buscar series por nombre en la barra de búsqueda:
+-   Buscar series por nombre en la barra de búsqueda:
     router.get("/search/:name", auth, SeriesController.getSeriesByName)
 
 
 
 ERRORES conocidos y mejoras futuras:
 
-•   Fallos en los alquileres de todos los usuarios y de admin: 
+-   Fallos en los alquileres de todos los usuarios y de admin: 
     505 internal server error
 
-•   Problema con el middleware isAdmin:
+-   Problema con el middleware isAdmin:
     No reconoce req.user y no puede sustraer información
 
-•   Necesario diseño responsive:
+-   Necesario diseño responsive:
     Aún no se ha implementado diseño responsive
