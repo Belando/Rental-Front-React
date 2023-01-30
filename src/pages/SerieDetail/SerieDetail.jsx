@@ -21,7 +21,9 @@ export const SerieDetail = () => {
     const [msg, setMsg] = useState('');
 
     const Rentme = () => {
-    
+    console.log(detailRdx.choosen)
+    console.log(detailUsr.userPass)
+    const precio = 5 + "€"
         let body = {
             idSerie : detailRdx.choosen._id,
             nameSerie : detailRdx.choosen.name,
@@ -29,7 +31,7 @@ export const SerieDetail = () => {
             nameUser : detailUsr.userPass.user.name,
             rentalDate : dayjs().format('DD/MM/YYYY'),
             returnDate : dayjs().add(7, 'days').format('DD/MM/YYYY'),
-            price : 5  
+            price : precio 
         }
 
         postRent(body, detailUsr.userPass.token.data.token)

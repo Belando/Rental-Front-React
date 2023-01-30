@@ -18,6 +18,7 @@
     align-items: center;
     height: 98vh;
     width: 100vw;
+    flex-direction: column;
 }
 
 .loadingGif {
