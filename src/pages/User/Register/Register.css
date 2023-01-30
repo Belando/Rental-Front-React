@@ -5,15 +5,15 @@
     align-items: center;
     height: 88vh;
     width: 100vw;
-    background-color:rgb(217, 145, 142);
-    color: rgb(141, 12, 12);
-    font-size: 24px;
+    background-color:rgb(121, 11, 75);
+    color: rgb(255, 255, 255);
+    font-size: 26px;
 }
 
 .registerButtonDesign {
     height: 2em;
     width: 10em;
-    background-color: rgb(141, 12, 12);
+    background-color: rgb(6, 6, 6);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -27,9 +27,9 @@
 
 .registerButtonDesign:hover {
     transition: 0.3s;
-    background-color: rgb(141, 12, 12);
+    background-color: rgb(47, 5, 30);
 }
 
 .errorText {
-    color: red;
+    color: rgb(255, 255, 255);
 }

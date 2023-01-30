@@ -7,14 +7,14 @@
     height: 100%;
     width: 100vw;
     font-size: 20px;
-    background-color: rgb(217, 145, 142);
-    color: rgb(141, 12, 12)
+    background-color: rgb(121, 11, 75);
+    color: rgb(255, 255, 255)
 }
 
 .modifyButtonDesign {
     height: 2em;
     width: 10em;
-    background-color: rgb(141, 12, 12);
+    background-color: rgb(6, 6, 6);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -29,13 +29,13 @@
 
 .modifyButtonDesign:hover {
     transition: 0.3s;
-    background-color: rgb(141, 12, 12);
+    background-color: rgb(8, 8, 8);
 }
 
 .deleteButtonDesign {
     height: 2em;
     width: 10em;
-    background-color: rgb(141, 12, 12);
+    background-color: rgb(11, 10, 10);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
 
 .deleteButtonDesign:hover {
     transition: 0.3s;
-    background-color: rgb(141, 12, 12);
+    background-color: rgb(6, 6, 6);
 }
 
 .welcomeDesign {
@@ -59,12 +59,13 @@
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    width: 100vw;
+    width: 30vw;
     height: 10vh;
     font-size: 22px;
-    background-color: rgb(217, 145, 142);
-    color: rgb(141, 12, 12);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-bottom: 2px;
+    border-radius: 1%;
 }
 
 .okDesign {
@@ -75,4 +76,10 @@
     height: 58vh;
     width: 100vw;
     flex-direction: column;
+}
+
+.h3{
+    background-color: rgb(6, 6, 6);
+    border-radius: 2%;
+    width: 25vw;
 }

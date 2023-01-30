@@ -5,7 +5,7 @@
     align-items: center;
     height: 88vh;
     width: 100vw;
-    background-color: rgb(217, 145, 142);
+    background-color: rgb(121, 11, 75);
     font-weight: bolder;
 }
 
@@ -23,6 +23,7 @@
 
 .detailPoster {
     height: 50vh;
+    border-radius: 1em;
     display: flex;
     justify-content: center;
 }
@@ -34,7 +35,7 @@
     height: 2.5em;
     width: 8em;
     border-radius: 1em;
-    background-color: rgb(141, 12, 12)  ;
+    background-color: rgb(11, 10, 10)  ;
     cursor: pointer;
     transition: 0.2s;
     color: white;
@@ -42,5 +43,5 @@
 
 .rentDesign:hover {
     transition: 0.2s;
-    background-color: rgb(255, 15, 15);
+    background-color: rgb(25, 22, 25);
 }

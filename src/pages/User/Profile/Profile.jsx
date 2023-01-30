@@ -112,7 +112,7 @@ export const Profile = () => {
 
         
             <div className='okDesign'>
-                <h3>Series alquiladas por el usuario</h3>
+                <h3 className='h3'>Series alquiladas por el usuario</h3>
                 <table>
                     <th>Serie</th>
                     <th>Inicio Alquiler</th>

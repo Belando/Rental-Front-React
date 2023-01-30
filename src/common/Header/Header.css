@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: rgb(141, 12, 12);
+    background-color: black;
 }
 
 .logoDesignHeader {
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    background-color: rgb(141, 12, 12);
+    background-color: black;
 }
 
 .cameraAvatar {
@@ -27,9 +27,9 @@
     font-size: 22px;
     display: flex;
     flex-direction: flex-end;
-    
+    justify-content: flex-end;
     align-items: flex-end;
-    background-color: rgb(141, 12, 12);
+    background-color: black;
 }
 
 .linkDesign {
@@ -46,13 +46,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgb(141, 12, 12);
+    background-color: black;
 }
 
 .inputDesign {
     height: 2em;
     width: 10em;
-    background-color: rgb(141, 12, 12);
+    background-color: black;
     cursor: pointer;
     display: flex;
     justify-content: center;

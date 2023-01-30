@@ -6,7 +6,15 @@
 
     height: 88vh;
     width: 100vw;
-    color: rgb(141, 12, 12);
+    color: rgb(255, 254, 254);
 
-    background-color:  rgb(217, 145, 142);
+    background-color:  rgb(121, 11, 75);
+}
+
+.h3{
+    background-color: rgb(6, 6, 6);
+    border-radius: 2%;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
 }
