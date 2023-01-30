@@ -13,7 +13,7 @@ import './Profile.css';
 import { useNavigate } from 'react-router-dom'
 
 //RDX
-import { useSelector} from "react-redux"
+import { useSelector } from "react-redux"
 import { userData, modify } from '../userSlice'
 
 //COMPONENT
@@ -109,32 +109,28 @@ export const Profile = () => {
             <InputText type={'text'} name={'dni'} placeholder={'DNI'} functionHandler={modifyInputHandler} />
             <div className='modifyButtonDesign' onClick={() => Modificame()}>Modificar</div>
             <div className='deleteButtonDesign' onClick={() => Eliminame()}>Eliminar</div>
-
             <div><br></br></div>
             <div className='rosterDesign'>
-                <div><h2>Series alquiladas por el usuario</h2></div>
-                <div>
-                    {RentedRDX.length > 0 &&
-                        RentedRDX.map(
-                            rental => {
-                                return (
-                                    <div key={rental._id}>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>{rental.rentalDate}</td>
-                                                    <td>{rental.returnDate}</td>
-                                                    <td>{rental.nameserie}</td>
-                                                    <td>{rental.price}</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                )
-                            }
+                <h3>Series alquiladas por el usuario</h3>
+                <table>
+                    <th>Serie</th>
+                    <th>Inicio Alquiler</th>
+                    <th>Fin Alquiler </th>
+                    <th>Precio </th>
+                </table>
+                {RentedRDX.length > 0 && RentedRDX.map(
+                    rental => {
+                        return (
+                            <div key={rental._id}>
+                                <table>
+                                    <td>{rental.nameserie}</td>
+                                    <td>{rental.rentalDate}</td>
+                                    <td>{rental.returnDate}</td>
+                                    <td>{rental.price}</td>
+                                </table>
+                            </div>
                         )
-                    }
-                </div>
+                    })}
             </div>
         </div>
     )
