@@ -51,8 +51,10 @@ export const SerieDetail = () => {
         <div className='serieDesign'>
             {detailRdx.choosen.id !== '' &&    
                 <div className='serieDetailCard'>
-                    <div>{detailRdx.choosen.name}</div>
+                    
                     <div><img className='detailPoster' src={`${poster_default}${detailRdx.choosen.poster_path}`}/></div>
+                    <br></br>
+                    <div>{detailRdx.choosen.name}</div>
                     <br></br>
                     <div>{detailRdx.choosen.year !== '' ? detailRdx.choosen.year : "TBA"}</div>
                     <br></br>

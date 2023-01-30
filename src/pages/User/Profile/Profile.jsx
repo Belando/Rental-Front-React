@@ -22,10 +22,6 @@ export const Profile = () => {
     const navigate = useNavigate();
     const userRDX = useSelector(userData);
     const [allRentals, setAllRentals] = useState([]);
-    const rentedByUser = (userId, allRentalsList) => {
-        return allRentalsList.filter(rental => rental.userId._id === userId);
-    }
-    const RentedRDX = rentedByUser(userRDX.userPass._id, allRentals);
 
     const [usuario, setUsuario] = useState({
         name: '',
@@ -45,7 +41,7 @@ export const Profile = () => {
 
     useEffect(() => {
         if (allRentals.length === 0) {
-            allRentalsUser(userRDX.userPass.token, userRDX.userPass.user._id)
+            allRentalsUser(userRDX.userPass.token, userRDX.userPass._id)
                 .then(resultado => {
                     setAllRentals(resultado.data)
                 }).catch(error => console.log(error))
@@ -112,14 +108,14 @@ export const Profile = () => {
 
         
             <div className='okDesign'>
-                <h3 className='h3'>Series alquiladas por el usuario</h3>
+                <h3 className='titulo'>Series alquiladas por el usuario</h3>
                 <table>
                     <th>Serie</th>
                     <th>Inicio Alquiler</th>
                     <th>Fin Alquiler </th>
                     <th>Precio </th>
                 </table>
-                {RentedRDX.length > 0 && RentedRDX.map(
+                {allRentals.length > 0 && allRentals.map(
                     rental => {
                         return (
                             <div key={rental._id}>
